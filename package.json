@@ -12,7 +12,10 @@
     "url": "git+https://github.com/julia-weissner/sprint_12_express.git"
   },
   "keywords": [],
-  "author": "",
+  "author": {
+    "name": "Yulia Weissner",
+    "email": "Ivashchik.Juliya@yandex.ru"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/julia-weissner/sprint_12_express/issues"
@@ -22,6 +25,7 @@
     "eslint": "^7.14.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-react": "^7.21.5",
     "nodemon": "^2.0.6"
   },
   "dependencies": {

@@ -2,7 +2,7 @@ const userRout = require('express').Router();
 const fs = require('fs').promises;
 const path = require('path');
 
-userRout.get('/users', (req, res) => {
+userRout.get('/', (req, res) => {
   fs.readFile(path.join(__dirname, '..', 'data', 'users.json'))
     .then((data) => {
       const dataJson = JSON.parse(data);
@@ -13,7 +13,7 @@ userRout.get('/users', (req, res) => {
     });
 });
 
-userRout.get('/users/:id', (req, res) => {
+userRout.get('/:id', (req, res) => {
   fs.readFile(path.join(__dirname, '..', 'data', 'users.json'))
     .then((data) => {
       const users = JSON.parse(data);

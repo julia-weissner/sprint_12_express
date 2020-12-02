@@ -12,12 +12,12 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static(path.join(__dirname, 'public')));
-app.use('/', userRout);
-app.use('/', cardRout);
+app.use('/users', userRout);
+app.use('/cards', cardRout);
 app.use('/', (req, res) => {
   res.status(404).send({ message: 'Запрашиваемый ресурс не найден' });
 });
 
 app.listen(PORT, () => {
   console.log(`App listening on port ${PORT}`);
-})
+});
